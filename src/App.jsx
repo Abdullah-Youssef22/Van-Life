@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Vans from "./Pages/Vans";
+import VanDetails from "./Pages/VanDetails";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
+          <Route path="/vans/:id" element={<VanDetails />} />
         </Routes>
       </BrowserRouter>
     </>
