@@ -6,27 +6,22 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Vans from "./Pages/Vans";
 import VanDetails from "./Pages/VanDetails";
+import Layout from "./components/Layout";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <BrowserRouter>
-        <Link className="link-button" to="/">#VANLIFE</Link>
-        <nav>
-          <Link className="link-button" to="/">Home</Link>
-          <Link className="link-button" to="/about">About</Link>
-          <Link className="link-button" to="/vans">Vans</Link>
-        </nav>
-        <Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetails />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
