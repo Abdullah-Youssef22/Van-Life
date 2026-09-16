@@ -17,6 +17,9 @@ export default function HostVanDetail() {
 
     return (
         <section>
+
+            <Link className="back-button" relative="path" to="..">&larr;<span>Back to all vans</span></Link>
+
             <div className="host-van-detail-layout-container">
                 <div className="host-van-detail">
                     <img src={currentVan.imageUrl} />
