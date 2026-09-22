@@ -7,7 +7,6 @@ export default function VanDetails() {
     const search = location.state?.search || ""
     const type=location.state?.type || ""
     
-    console.log(search)
     const [van, setVan] = React.useState(null);
     React.useEffect(() => {
         fetch(`/api/vans/${params.id}`)
