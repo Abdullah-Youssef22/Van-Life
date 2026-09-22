@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, NavLink } from "react-router-dom"
+import imageUrl from "/Users/abdallah youssef/Learning/Front-end/React/Vite Frist Project/src/assets/avatar-icon.png"
 
 export default function Header() {
     const activeStyles = {
@@ -31,6 +32,7 @@ export default function Header() {
                     Vans
                 </NavLink>
             </nav>
+            <img src={imageUrl} className="user-avatar" />
         </header>
     )
 }
