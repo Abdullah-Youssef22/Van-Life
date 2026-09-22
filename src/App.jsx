@@ -6,6 +6,7 @@ import "./App.css";
 import Layout from "./components/Layout";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import NotFound from "./Pages/NotFound";
 import Vans from "./Pages/Vans/Vans";
 import VanDetails from "./Pages/Vans/VanDetails";
 
@@ -41,6 +42,7 @@ function App() {
             </Route>
           </Route>
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
