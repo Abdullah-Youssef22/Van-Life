@@ -30,16 +30,6 @@ import HostVanDetails from "./Pages/Host/HostVanDetails";
 
 import "./server"
 
-/**
- * Challenge: Add an errorElement to the vans Route.
- * 
- * 1. This time, instead of just putting in an <h1> directly,
- *    you should make a new Error.jsx component in the components
- *    folder. (We'll learn something new about this soon). For now,
- *    that new component can just render the <h1>An error occurred!</h1>
- * 2. Import and use that new Error component as the errorElement
- *    on the /vans route.
- */
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Layout />}>
